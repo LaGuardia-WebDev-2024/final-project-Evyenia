@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Styling Only Related To THIS Page */
+      h1{
+        font-family: bubble;
+      }
+       .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .flip-card-back {
+        background-color: #f5eb82;
+        color: black;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a class="active" href="Other.html">Other</a></li>
+      <li style="float: right">
+        <a target="_blank" href=""
+          ><img
+            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
+            style="width: 25px; margin: -5px"
+        /></a>
+      </li>
+      <li style="float: right">
+        <a target="_blank" href=""
+          ><img
+            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
+            style="width: 25px; margin: -5px"
+        /></a>
+      </li>
+    </ul>
+    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+    <h1>Other</h1>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img
+            src="https://cdn.glitch.global/f5cfd84d-2c71-476a-95e1-963277195f39/Photo%20on%201-29-25%20at%207.47%20PM.JPG?v=1749742472387"
+            style="width: 300px; height: 300px; object-fit: cover"
+          />
+        </div>
+        <div class="flip-card-back">
+          <h1 class="face">HELLO</h1>
+          <p class="face">
+            BYEEEEE <br>   
+            Thanks for looking at my website 🥺
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

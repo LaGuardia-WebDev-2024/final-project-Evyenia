@@ -13,7 +13,7 @@ ul.nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #ADB2D4;
   position: fixed;
   top: 0;
   width: 100%;
@@ -26,20 +26,24 @@ ul.nav li {
 
 ul.nav li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 ul.nav li a:hover:not(.active) {
-  background-color: yellow;
+  background-color: #D5E5D5;
 }
 
 ul.nav .active {
-  background-color: red;
+  background-color: #C7D9DD;
 }
 
 h1 {
   width: 100%;
 }
+ @font-face{
+        font-family:bubble;
+        src: url(https://cdn.glitch.global/f5cfd84d-2c71-476a-95e1-963277195f39/Chewy%20Bubble.otf?v=1748618829586)
+      }
